@@ -247,14 +247,16 @@ a {
 }
 
 .btn-outline {
-    background: transparent;
-    color: var(--ice-300);
-    border: 1px solid var(--border-glow);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .btn-outline:hover {
-    background: rgba(124, 203, 240, 0.1);
-    border-color: var(--ice-400);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.4);
     transform: translateY(-2px);
 }
 
@@ -389,6 +391,7 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .title-woo {
@@ -402,7 +405,7 @@ a {
     background-clip: text;
     animation: gradientShift 6s ease infinite;
     letter-spacing: -0.04em;
-    filter: drop-shadow(0 0 60px rgba(26, 159, 223, 0.35));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 60px rgba(26, 159, 223, 0.35));
     line-height: 0.9;
 }
 
@@ -989,8 +992,7 @@ a {
 
 /* --- X Icon-Only Button --- */
 .btn-x-icon {
-    padding: 14px 16px;
-    gap: 0;
+    padding: 14px 36px;
 }
 
 /* --- X Profile Link (CTA section) --- */
@@ -1356,8 +1358,8 @@ a {
     }
 
     .hero-buttons .btn-x-icon {
-        width: auto;
-        max-width: none;
+        width: 100%;
+        max-width: 260px;
     }
 
     .hero-ca {
