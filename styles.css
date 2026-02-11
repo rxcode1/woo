@@ -492,6 +492,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-top: 2px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 .stat-divider {
@@ -612,6 +613,7 @@ a {
     letter-spacing: -0.03em;
     margin-bottom: 20px;
     line-height: 1.15;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .section-desc {
@@ -620,6 +622,7 @@ a {
     max-width: 620px;
     margin: 0 auto;
     line-height: 1.7;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* --- About Section --- */
@@ -738,12 +741,14 @@ a {
     margin-bottom: 12px;
     color: #f5fbff;
     letter-spacing: -0.01em;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .card-text {
     font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.7;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 /* --- Tokenomics Section --- */
@@ -894,6 +899,7 @@ a {
     font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.7;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 /* --- How to Buy Section --- */
@@ -982,12 +988,14 @@ a {
     font-weight: 700;
     color: var(--ice-100);
     margin-bottom: 10px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .step-text {
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.7;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 /* --- X Icon-Only Button --- */
