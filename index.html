@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOO</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="bg-video-wrapper">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="bg1.mp4" type="video/mp4">
+        </video>
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <!-- Snowfall Canvas -->
+    <canvas id="snowCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span>WOO</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#howtobuy">How to Buy</a>
+                <a href="#memes">Memes</a>
+                <a href="https://x.com/i/communities/2021205195632660632" target="_blank">Community</a>
+            </div>
+            <a href="https://x.com/legend_woo" target="_blank" class="nav-cta nav-x">
+                <span>View Woo's X</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-centered" id="hero">
+        <div class="hero-bg-video">
+            <video autoplay muted loop playsinline>
+                <source src="bg-hero1.mp4" type="video/mp4">
+            </video>
+            <div class="hero-bg-overlay"></div>
+        </div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                11 Years Strong
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="title-line">The Legendary</span>
+                <span class="title-woo">WOO</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                One word. One mission. Eleven years of unwavering dedication — posting <span class="highlight">"woo"</span> every single day. The most consistent account in internet history.
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="https://pump.fun/coin/8KvoBfxiPiVp9b9mxSFZHpJdX9NUtbmNFhAGggLDpump" target="_blank" class="btn btn-primary">
+                    <span>Buy WOO</span>
+                </a>
+                <a href="#howtobuy" class="btn btn-outline">
+                    <span>How to Buy</span>
+                </a>
+                <a href="https://x.com/i/communities/2021205195632660632" target="_blank" class="btn btn-x btn-x-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+            <div class="hero-ca animate-on-scroll" onclick="navigator.clipboard.writeText('8KvoBfxiPiVp9b9mxSFZHpJdX9NUtbmNFhAGggLDpump'); this.querySelector('.ca-copied').style.opacity='1'; setTimeout(() => this.querySelector('.ca-copied').style.opacity='0', 1500);">
+                <span class="ca-text">CA: 8KvoBfxiPiVp9b9mxSFZHpJdX9NUtbmNFhAGggLDpump</span>
+                <span class="ca-copied">Copied!</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-top animate-on-scroll">
+                <div class="about-image">
+                    <img src="woo.png" alt="Woo" class="about-img">
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">The Legend</span>
+                    <h2 class="section-title">What is <span class="highlight">Woo</span>?</h2>
+                    <p class="section-desc">
+                        Woo isn't just a word — it's a movement. For over 11 years, one account has done the impossible: posted "woo" every single day without fail. No breaks. No vacations. No excuses. Just pure, unfiltered <strong>woo</strong>.
+                        <br><br>
+                        Woo teaches us about consistency. As trenchers, we must embrace even the simple things and never get bored of it. This community stands for consistency and dedication. Let's spread the simple <strong>woo</strong>.
+                    </p>
+                </div>
+            </div>
+            <div class="about-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-target="4015">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Days of Woo</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="11">0</span><span class="stat-suffix"> yrs</span>
+                    <span class="stat-label">Consecutive</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1">0</span><span class="stat-suffix"> word</span>
+                    <span class="stat-label">That's It</span>
+                </div>
+            </div>
+            <div class="about-cards">
+                <div class="card animate-on-scroll" data-delay="0">
+                    <h3 class="card-title">11 Years Running</h3>
+                    <p class="card-text">Over 4,000 consecutive days of posting one word. That's dedication you can't fake.</p>
+                </div>
+                <div class="card animate-on-scroll" data-delay="100">
+                    <h3 class="card-title">One Word Only</h3>
+                    <p class="card-text">No essays. No threads. No hot takes. Just three letters that changed the internet forever: w-o-o.</p>
+                </div>
+                <div class="card animate-on-scroll" data-delay="200">
+                    <h3 class="card-title">Cult Following</h3>
+                    <p class="card-text">A growing community of believers who understand the power of consistency and the beauty of simplicity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics" id="tokenomics">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Tokenomics</span>
+                <h2 class="section-title">Simple. <span class="highlight">Cold.</span> Clean.</h2>
+                <p class="section-desc">
+                    No complex mechanisms. No hidden fees. Just pure tokenomics as clean as Arctic ice.
+                </p>
+            </div>
+            <div class="tokenomics-grid">
+                <div class="token-card token-card-main animate-on-scroll">
+                    <div class="token-card-bg"></div>
+                    <div class="token-card-content">
+                        <div class="token-label">Total Supply</div>
+                        <div class="token-value">1,000,000,000</div>
+                        <div class="token-sub">One Billion $WOO</div>
+                        <div class="token-visual">
+                            <div class="supply-bar">
+                                <div class="supply-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="token-card animate-on-scroll" data-delay="100">
+                    <div class="token-card-bg"></div>
+                    <div class="token-card-content">
+                        <div class="token-icon">
+                            <span>0%</span>
+                        </div>
+                        <div class="token-label">Tax</div>
+                        <div class="token-value-sm">Zero Tax</div>
+                        <p class="token-desc">Buy and sell freely. No hidden fees, no sneaky taxes. What you see is what you get.</p>
+                    </div>
+                </div>
+                <div class="token-card animate-on-scroll" data-delay="200">
+                    <div class="token-card-bg"></div>
+                    <div class="token-card-content">
+                        <div class="token-icon">
+                            <span>100%</span>
+                        </div>
+                        <div class="token-label">Allocation</div>
+                        <div class="token-value-sm">100% Woo</div>
+                        <p class="token-desc">Every single token is woo. No team allocation. No VC. No insider deals. Just woo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section class="howtobuy" id="howtobuy">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Get Started</span>
+                <h2 class="section-title">How to Buy <span class="highlight">WOO</span></h2>
+                <p class="section-desc">
+                    WOO lives on Solana. Here's how to get your hands on it in four simple steps.
+                </p>
+            </div>
+            <div class="howtobuy-steps">
+                <div class="step-card animate-on-scroll" data-delay="0">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Create a Wallet</h3>
+                    <p class="step-text">Download <strong>Phantom</strong> or <strong>Solflare</strong> wallet. Available as a browser extension or mobile app. Set it up and secure your seed phrase.</p>
+                </div>
+                <div class="step-card animate-on-scroll" data-delay="100">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Get SOL</h3>
+                    <p class="step-text">Buy SOL on any exchange like <strong>Coinbase</strong>, <strong>Binance</strong>, or <strong>Kraken</strong>. Send it to your Phantom or Solflare wallet address.</p>
+                </div>
+                <div class="step-card animate-on-scroll" data-delay="200">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Go to Raydium</h3>
+                    <p class="step-text">Head to <strong>raydium.io</strong> or <strong>Jupiter</strong>. Connect your wallet and paste the WOO contract address to find the token.</p>
+                </div>
+                <div class="step-card animate-on-scroll" data-delay="300">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Swap for WOO</h3>
+                    <p class="step-text">Set your slippage, enter the amount of SOL you want to swap, and confirm the transaction. Welcome to the <strong>woo</strong> movement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Carousel Section -->
+    <section class="memes" id="memes">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">The <span class="highlight">Woo</span> Collection</h2>
+                <p class="section-desc">
+                    The finest collection of woo memes, curated by the community.
+                </p>
+            </div>
+        </div>
+        <!-- Sliding Meme Row 1 - Left -->
+        <div class="meme-slider">
+            <div class="meme-track meme-track-left">
+                <div class="meme-slide"><div class="meme-card"><img src="memes/1.jfif" alt="woo meme 1"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/2.jfif" alt="woo meme 2"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/3.jfif" alt="woo meme 3"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/4.jfif" alt="woo meme 4"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/5.jfif" alt="woo meme 5"></div></div>
+                <!-- Duplicates for seamless loop -->
+                <div class="meme-slide"><div class="meme-card"><img src="memes/1.jfif" alt="woo meme 1"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/2.jfif" alt="woo meme 2"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/3.jfif" alt="woo meme 3"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/4.jfif" alt="woo meme 4"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/5.jfif" alt="woo meme 5"></div></div>
+            </div>
+        </div>
+        <!-- Sliding Meme Row 2 - Right -->
+        <div class="meme-slider">
+            <div class="meme-track meme-track-right">
+                <div class="meme-slide"><div class="meme-card"><img src="memes/6.jfif" alt="woo meme 6"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/7.jfif" alt="woo meme 7"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/8.jfif" alt="woo meme 8"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/9.jfif" alt="woo meme 9"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/10.jfif" alt="woo meme 10"></div></div>
+                <!-- Duplicates for seamless loop -->
+                <div class="meme-slide"><div class="meme-card"><img src="memes/6.jfif" alt="woo meme 6"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/7.jfif" alt="woo meme 7"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/8.jfif" alt="woo meme 8"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/9.jfif" alt="woo meme 9"></div></div>
+                <div class="meme-slide"><div class="meme-card"><img src="memes/10.jfif" alt="woo meme 10"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">WOO</span>
+                    <p class="footer-tagline">11 years of woo. Forever on-chain.</p>
+                </div>
+                <div class="footer-links">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WOO. All rights reserved. woo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
