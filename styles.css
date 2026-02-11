@@ -631,15 +631,7 @@ a {
     position: relative;
 }
 
-.about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--border-glow), transparent);
-}
+/* divider line removed for consistent background */
 
 .about-top {
     display: flex;
@@ -908,15 +900,7 @@ a {
     position: relative;
 }
 
-.howtobuy::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--border-glow), transparent);
-}
+/* divider line removed for consistent background */
 
 .howtobuy-steps {
     display: grid;
@@ -1045,15 +1029,7 @@ a {
     position: relative;
 }
 
-.memes::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--border-glow), transparent);
-}
+/* divider line removed for consistent background */
 
 .meme-slider {
     width: 100%;
@@ -1195,7 +1171,7 @@ a {
 
 /* --- Footer --- */
 .footer {
-    border-top: 1px solid var(--border-subtle);
+    border-top: none;
     padding: 48px 0;
 }
 
@@ -1246,7 +1222,7 @@ a {
 
 .footer-bottom {
     padding-top: 24px;
-    border-top: 1px solid var(--border-subtle);
+    border-top: none;
 }
 
 .footer-bottom p {
